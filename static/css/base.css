@@ -1,0 +1,42 @@
+body {
+    background-color: gray;
+    padding: 0;
+    margin: 0;
+}
+.main_menu {
+    display: flex;
+    justify-content: center;
+}
+.main_menu_btn {
+    background-color: greenyellow;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+.main_menu_btn:hover {
+    background-color: green;
+    transition: 0.5s;
+}
+.user_info {
+    text-align: center;
+}
+#correct {
+    text-shadow: 0 0 5px greenyellow;
+}
+#incorrect {
+    text-shadow: 0 0 5px orangered;
+}
+#logout_btn {
+    background-color: orange;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    transition: 0.5s;
+}
+#logout_btn:hover {
+    background-color: coral;
+    transition: 0.5s;
+}
+
+

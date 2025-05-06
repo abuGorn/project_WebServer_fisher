@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block all_styles_block %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+{% endblock %}
+
+{% block main_content %}
+    <form action="" id="country_form">
+        <h2>Угадай что за страна!</h2>
+        <p id="area_p">Площадь: {{ area }}</p>
+        <p id="population_p">Население: {{ population }}</p>
+        <p id="capital_p">Столица: {{ capital }}</p>
+        <label for="user_answer_input">Введите название страны:</label>
+        <br>
+        <input type="text" id="user_answer_input"><br><br>
+        <input type="submit" id="check_answer_btn" value="Проверить">
+        <button id="dont_know">Сдаться / дать другую страну</button>
+    </form>
+
+{% endblock %}
+
+{% block scripts_block %}
+    <script src="{{ url_for('static', filename='js/countries.js') }}"></script>
+{% endblock %}
+

@@ -1,0 +1,51 @@
+#register_form {
+    width: 320px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 100px;
+    background-color: green;
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    font-size: 30px;
+    color: greenyellow;
+}
+.login_input {
+    border: none;
+    border-bottom: 2px solid black;
+    margin-bottom: 15px;
+    background-color: green;
+    font-size: 30px;
+    width: 280px;
+}
+#register_btn {
+    font-size: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: greenyellow;
+    transition: 0.5s;
+}
+#register_btn:hover {
+    background-color: green;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#have_account {
+    text-decoration: none;
+    background-color: greenyellow;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 12px;
+    transition: 0.5s;
+}
+#have_account:hover {
+    background-color: green;
+    transition: 0.5s;
+}
+.login_error_msg {
+    list-style: none;
+    text-align: center;
+    color: orange;
+    font-size: 20px;
+}

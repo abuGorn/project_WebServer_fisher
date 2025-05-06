@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block all_styles_block %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+{% endblock %}
+
+{% block main_content %}
+<form id="register_form" action="" method="post">
+    <label for="username">Логин:</label><br>
+    <input type="text" name="username" placeholder="Логин" id="username" class="login_input" required>
+    <br>
+    <label for="password">Пароль:</label><br>
+    <input type="password" name="password" placeholder="Пароль" id="password" class="login_input" required>
+    <br>
+    <input type="submit" value="Войти" id="register_btn">
+    <p><a href="{{ url_for('register') }}" id="have_account">Нет аккаунта? Нажмите тут, чтобы зарегистрироваться.</a></p>
+</form>
+
+
+{% with messages = get_flashed_messages() %}
+	{% if messages %}
+        <ul class="login_error_msg">
+            {% for message in messages %}
+                <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+{% endwith %}
+
+{% endblock %}
+
+
+
+
+

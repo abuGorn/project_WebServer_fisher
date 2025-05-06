@@ -1,0 +1,28 @@
+#country_form {
+    text-align: center;
+    font-size: 30px;
+}
+#user_answer_input {
+    font-size: 30px;
+}
+#check_answer_btn, #dont_know {
+    font-size: 30px;
+    border: none;
+    border-radius: 5px;
+}
+#check_answer_btn {
+    background-color: greenyellow;
+}
+#check_answer_btn:hover {
+    background-color: green;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#dont_know {
+    background-color: orange;
+}
+#dont_know:hover {
+    background-color: red;
+    cursor: pointer;
+    transition: 0.5s;
+}
